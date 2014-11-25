@@ -3,7 +3,8 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
 
-	<properties resource="generatorConfig.properties" />
+	<!-- 引入配置文件 -->
+	<properties resource="generatorConfig4MavenOrIDEA.properties" />
 	<!-- classPathEntry:数据库的JDBC驱动 -->
 	<classPathEntry location="${location}" />
 	<context id="DB2Tables" targetRuntime="MyBatis3">
