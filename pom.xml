@@ -46,34 +46,14 @@
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
 			</plugin>
-			<plugin>
-				<!--mvn mybatis-generator:generate-->
-				<!--mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate-->
-				<groupId>org.mybatis.generator</groupId>
-				<artifactId>mybatis-generator-maven-plugin</artifactId>
-				<version>1.3.0</version>
-				<configuration>
-					<verbose>true</verbose>
-					<!--覆盖之前生成的-->
-					<overwrite>true</overwrite>
-				</configuration>
-				<executions>
-					<execution>
-						<id>Generate MyBatis Artifacts</id>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
         <sonatypeOssDistMgmtStagingUrl>https://oss.sonatype.org/service/local/staging/deploy/maven2/</sonatypeOssDistMgmtStagingUrl>
+        
 		<mybatis.version>3.2.2</mybatis.version>
 		<mybatis-generator-core.version>1.3.2</mybatis-generator-core.version>
 	</properties>

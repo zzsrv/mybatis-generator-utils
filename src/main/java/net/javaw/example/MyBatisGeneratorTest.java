@@ -28,4 +28,15 @@ public class MyBatisGeneratorTest {
         myBatisGenerator.generate(null);
     }
 
+    public static void main(String[] args) throws IOException, XMLParserException, InvalidConfigurationException, SQLException, InterruptedException {
+        List<String> warnings = new ArrayList<String>();
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = cp.parseConfiguration(new MyBatisGeneratorTest().getClass().getClassLoader().getResourceAsStream("generatorConfig.xml"));
+
+        DefaultShellCallback shellCallback = new DefaultShellCallback(true);
+
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, shellCallback, warnings);
+        myBatisGenerator.generate(null);
+    }
+
 }
