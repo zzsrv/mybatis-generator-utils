@@ -4,7 +4,7 @@
 	<groupId>net.javaw</groupId>
 	<artifactId>mybatis-generator-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>1.1</version>
+	<version>1.2</version>
 	<name>mybatis-generator-utils</name>
 	<description>MyBatis自动生成Mapper和XML文件，包含数据库物理分页等工具</description>
 	<url>https://github.com/Helios4J/mybatis-generator-utils</url>
@@ -51,6 +51,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
         <sonatypeOssDistMgmtStagingUrl>https://oss.sonatype.org/service/local/staging/deploy/maven2/</sonatypeOssDistMgmtStagingUrl>
         
